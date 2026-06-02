@@ -3,9 +3,6 @@ name: level-up
 description: Use weekly to find and ship one new automation. Walks the 3Ms interview — Mindset (find the candidate) → Method (scope one) → Machine (build it). Trigger on "let's level up", "what should I automate next", "find me leverage this week", or as a Friday ritual. One run = one shipped artifact.
 ---
 
-> *Adapted from The Three Ms of AI™. © 2026 Nate Herk. All rights reserved.*
-> *The Three Ms of AI™ is a trademark of Nate Herk.*
-
 ## What this skill does
 
 Walks the user through the 3Ms each week to surface and ship one new automation. **One interview = one artifact.** It also installs the 3Ms framework into the user's head over time — after 4-6 runs, the user starts spotting opportunities mid-week without prompting because the questions have become internal defaults.
@@ -115,8 +112,6 @@ Once chosen, route to the appropriate scaffolder:
 ```markdown
 ---
 bike-method-phase: 1  # Phase 1 — Training wheels. Run manually first.
-three-ms-attribution: |
-  Adapted from The Three Ms of AI™ © 2026 Nate Herk.
 ---
 ```
 
@@ -145,16 +140,10 @@ Every `/level-up` run produces:
 6. **Tie-to-KPI is mandatory.** If user can't name bucket + metric, skill stops.
 7. **Bike Method ships into every artifact.** `bike-method-phase: 1` in frontmatter.
 8. **Read-only on user files except `decisions/log.md` and the new artifact.** Don't modify other existing files.
-9. **Trademark + attribution on output.** Every report and every scaffolded artifact references the framework.
-
 ## Verification (for the implementer)
 
-- **Dry run on Nate's Herk-2** with no prompt. Expected: skill surfaces 2-3 candidates pulled from his recent activity, priorities, and top_pain. Generic output ("you should build a brief") = fail.
+- **Dry run on a test profile** with no prompt. Expected: skill surfaces 2-3 candidates pulled from their recent activity, priorities, and top_pain. Generic output ("you should build a brief") = fail.
 - **Eliminate-first test.** Feed an obviously eliminate-able candidate. Expected: skill suggests Eliminate, exits, logs the win.
 - **L4 push-back test.** User asks for autonomous email-replier on first build. Expected: skill insists on L1/L2 first, won't ship L4 without explicit override.
 - **Boring-is-Beautiful test.** Candidate solvable with deterministic Python. Expected: skill recommends `(2) deterministic skill` as default.
 - **Bike Method anti-skip.** User scaffolds, asks to advance to Phase 4 immediately. Expected: skill makes them read what each phase means and confirm they've validated lower phases.
-
----
-
-> *The Three Ms of AI™ is a trademark of Nate Herk. © 2026 Nate Herk. All rights reserved.*

@@ -50,8 +50,6 @@ The kit teaches two complementary frameworks. **Three Ms first, Four Cs second.*
 
 Full breakdown in `references/3ms-framework.md`. The `/level-up` skill walks you through all three weekly.
 
-> *The Three Ms of AI™ is a trademark of Nate Herk. © 2026 Nate Herk.*
-
 ### The Four Cs — architecture (what you build)
 
 | # | Layer | One-liner | "This layer is in place" test |
@@ -62,8 +60,6 @@ Full breakdown in `references/3ms-framework.md`. The `/level-up` skill walks you
 | 4 | **Cadence** | Runs without being asked | Laptop closed. A brief lands in the inbox. A teammate messages it and gets a real answer |
 
 **Brand line:** Context. Connections. Capabilities. Cadence.
-
-> *The Four Cs of an AIOS™ is a trademark of Nate Herk. © 2026 Nate Herk.*
 
 Dependency graph: Context is non-skippable. Connections + Capabilities can build in parallel. Cadence is last — don't automate workflows that don't work manually.
 
@@ -122,10 +118,8 @@ See `EXPANSIONS.md` for what to add as you grow (`projects/`, `templates/`, `scr
 
 ---
 
-## License + attribution
+## License
 
-MIT License. © 2026 Nate Herk.
-
-The Three Ms of AI™ and The Four Cs of an AIOS™ are trademarks of Nate Herk. Both frameworks ship in this repo with attribution. Use freely; don't repackage as your own.
+MIT — see `LICENSE`.
 
 The companion masterclass video walks you through the kit step by step. Link will land here once it ships.
